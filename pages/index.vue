@@ -1,7 +1,6 @@
 <template>
-  <section class="container">
+  <section class="">
     <div>
-      <nav-bar/>
       <app-logo/>
       <h1 class="title">
         presta-nuxt
@@ -24,33 +23,21 @@
 </template>
 
 <script>
+
+
 import AppLogo from '~/components/AppLogo.vue'
-import NavBar from '~/components/NavBar.vue'
 
 export default {
   components: {
-    AppLogo,
-    NavBar
+    AppLogo
   }
 }
 </script>
 
 <style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+section {
+  padding: important!
 }
 
 .subtitle {

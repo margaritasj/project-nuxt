@@ -1,45 +1,55 @@
-const webpack = require('webpack')
 module.exports = {
   /*
    ** Headers of the page
    */
   head: {
-    title: 'Proyecto prestamype',
-    meta: [{
-        charset: 'utf-8'
+    title: "Proyecto prestamype",
+    meta: [
+      {
+        charset: "utf-8"
       },
       {
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1'
+        name: "viewport",
+        content: "width=device-width, initial-scale=1"
       },
       {
-        hid: 'description',
-        name: 'description',
-        content: 'proyecto basado en nuxt.js'
+        hid: "description",
+        name: "description",
+        content: "proyecto basado en nuxt.js"
       }
     ],
-    link: [{
-      rel: 'icon',
-      type: 'image/x-icon',
-      href: '/favicon.ico'
-    }],
-    // include bootstrap css
-    css: ['bootstrap/dist/css/bootstrap.css'],
-    // include bootstrap js on startup
-    plugins: ['plugins/bootstrap.js',
-      // set shortcuts as global for bootstrap
-      new webpack.ProvidePlugin({
-        $: 'jquery',
-        jQuery: 'jquery',
-        'window.jQuery': 'jquery'
-      })
+    link: [
+      {
+        rel: "icon",
+        type: "image/x-icon",
+        href: "/favicon.ico"
+      },
+      {
+        // include bootstrap css
+        rel: "stylesheet",
+        href:"https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      },
+      {
+        // include google fonts css
+        rel: "stylesheet",
+        href:"https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900"
+      },
+      {
+        rel:"stylesheet",
+        href:"https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      }
+    ],
+    script: [
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'},
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'},
+      { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js'}
     ]
   },
   /*
    ** Customize the progress bar color
    */
   loading: {
-    color: '#3B8070'
+    color: "#3B8070"
   },
   /*
    ** Build configuration
@@ -48,19 +58,15 @@ module.exports = {
     /*
      ** Run ESLint on save
      */
-    extend(config, {
-      isDev,
-      isClient
-    }) {
+    extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
-          enforce: 'pre',
+          enforce: "pre",
           test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
+          loader: "eslint-loader",
           exclude: /(node_modules)/
-        })
+        });
       }
-    },
-
-  },
-}
+    }
+  }
+};
