@@ -7,12 +7,12 @@
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-		      <div class="navbar-nav text-uppercase ml-auto">
-            <nuxt-link class="navbar-item nav-link" to="/">préstamos</nuxt-link>
-            <nuxt-link class="navbar-item nav-link" to="/about">invertir</nuxt-link>
-            <nuxt-link class="navbar-item nav-link" to="/projects">nosotros</nuxt-link>
-            <nuxt-link class="navbar-item nav-link" to="/contact">preguntas frecuentes</nuxt-link>
-            <nuxt-link class="navbar-item nav-link" to="/contact">artículos</nuxt-link>
+		      <div class="navbar-nav text-uppercase ml-auto text-center">
+            <nuxt-link class="navbar-item nav-link" to="/prestamos">préstamos</nuxt-link>
+            <nuxt-link class="navbar-item nav-link" to="/invertir">invertir</nuxt-link>
+            <nuxt-link class="navbar-item nav-link" to="/nosotros">nosotros</nuxt-link>
+            <nuxt-link class="navbar-item nav-link" to="/preguntas">preguntas frecuentes</nuxt-link>
+            <nuxt-link class="navbar-item nav-link" to="/articulos">artículos</nuxt-link>
           </div>
         </div>
       </div>
@@ -33,11 +33,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.navbar {
-  margin-top: 1rem;
-  padding: 15px 0;
-}
-
 .fixed-top {
   z-index: 1000;
 }
@@ -46,15 +41,42 @@ button {
   color: #fff;
 }
 
-.navbar-item {
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 1rem;
-  color: #fff;
-  box-shadow: 1px #fff;
+.navbar {
+  margin-top: 1rem;
+  padding: 0.9rem 0;
 }
 
+.navbar-collapse {
+  margin: 0.8rem;
+  margin-top: 0;
+  border-radius: 0.6rem;
+  background-color: #fff;
+  height: 35vh;
+}
 
-@media (max-width: 575.98px) { }
+.navbar-item {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.55rem;
+  color: #424242;
+}
 
+.navbar-item:hover {
+  border: 1px solid #c9c9c9;
+  border-radius: 0.6rem;
+}
+
+/* ------------ Media para tablet y desktop------------ */
+@media (min-width: 1024px) {
+  .navbar-item {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem;
+    color: #fff;
+    box-shadow: 1px #fff;
+  }
+  .navbar-collapse {
+    height: 0;
+  }
+}
 </style>

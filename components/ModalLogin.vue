@@ -1,6 +1,6 @@
 <template>
   <!--Login-->
-  <div class="modal display-none style-modal modal-sm" id="login">
+  <div class="modal fade display-none style-modal modal-sm" id="login">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-center">
@@ -9,25 +9,25 @@
           </button>
         </div>
         <div class="modal-body">
-            <form class="container-modal text-center">
-              <div class="input-group">
-                <div class="input-group-addon">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                </div>
-                <input type="text" class="form-control" placeholder="Usuario">
+          <form class="container-modal text-center">
+            <div class="input-group">
+              <div class="input-group-addon">
+                <i class="fa fa-user" aria-hidden="true"></i>
               </div>
-              <br>
-              <div class="input-group">
-                <div class="input-group-addon">
-                  <i class="fas fa-key"></i>
-                </div>
-                <input type="password" class="form-control" placeholder="Contraseña">
+              <input type="text" class="form-control" placeholder="Usuario">
+            </div>
+            <br>
+            <div class="input-group">
+              <div class="input-group-addon">
+                <i class="fas fa-key"></i>
               </div>
-              <br>
-              <button class="btn btn-default btn-green" type="submit">ingresar</button>
-              <br>
-            </form>
-          </div>
+              <input type="password" class="form-control" placeholder="Contraseña">
+            </div>
+            <br>
+            <button class="btn btn-default btn-green" type="submit">ingresar</button>
+            <br>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -112,13 +112,17 @@ i {
 
 @media (min-width: 1024px) {
   .style-modal {
+    margin-left: 42rem;
+  }
+}
+@media (min-width: 1200px) {
+  .style-modal {
     margin-left: 65rem;
   }
 }
-
 @media (min-width: 1440px) {
   .style-modal {
-    margin-left: 100rem;
+    margin-left: 75rem;
   }
 }
 </style>

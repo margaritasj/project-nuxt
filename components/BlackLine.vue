@@ -3,7 +3,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12 d-flex justify-content-end line-black fixed-top">
-					<span href="#login" data-toggle="modal">{{ txt }} </span>
+					<span href="#login" data-toggle="modal" data-backdrop="false">{{ txt }} </span>
           <!-- Modal Login -->
 					<span>
 						<a href="https://www.facebook.com/Prestamype/" target="_blank" class="f-icon">
@@ -17,11 +17,17 @@
 </template>
 
 <script>
+
 export default {
   name: "BlackBar",
   props: {
     txt: String
+  },
+  methods: {
+
+
   }
+
 };
 </script>
 

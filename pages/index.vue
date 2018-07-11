@@ -1,54 +1,51 @@
 <template>
-  <section class="">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        presta-nuxt
-      </h1>
-      <h2 class="subtitle">
-        proyecto basado en nuxt.js
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+  <div class="home">
+    <!-- Header -->
+    <header class="masthead container-fluid">
+      <div class="title">
+		    <h1 class="title d-flex justify-content-center text-uppercase"> CONECTAMOS A PERSONAS <br class="d-none d-sm-block">PARA QUE CUMPLAN SUS METAS </h1>
       </div>
-    </div>
-  </section>
+    </header>
+  </div>
 </template>
 
 <script>
 
-
-import AppLogo from '~/components/AppLogo.vue'
-
 export default {
-  components: {
-    AppLogo
-  }
-}
+  name: "Home",
+};
 </script>
 
-<style>
-
-section {
-  padding: important!
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+.masthead {
+  background-image: url("~/assets/images/banner-home.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  height: 90vh;
+}
+.title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  line-height: 50px;
+  padding: 5rem 0;
+  text-align: center;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+@media (min-width: 320px) {
+  .title {
+    font-size: 28px;
+    line-height: 1.3;
+  }
 }
 </style>
+
