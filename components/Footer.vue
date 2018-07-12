@@ -72,7 +72,7 @@
     </div>
     <div class="row mastfoot">
       <div class="col-12 text-center">
-      <p class="text-center ">© 2018 P2P Finance Consulting SAC. Todos los derechos reservados</p>
+        <p class="text-center ">© 2018 P2P Finance Consulting SAC. Todos los derechos reservados</p>
       </div>
     </div>
   </footer>
@@ -151,9 +151,9 @@ li {
 
 /* ------------ Media para tablet y desktop------------ */
 @media (min-width: 768px) {
- .pd-md {
-   padding: 2.5rem;
- }
+  .pd-md {
+    padding: 2.5rem;
+  }
 }
 </style>
 

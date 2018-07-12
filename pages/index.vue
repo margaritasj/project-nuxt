@@ -2,17 +2,36 @@
   <div class="home">
     <!-- Header -->
     <header class="masthead container-fluid">
-      <div class="title">
+      <div class="title text-center">
 		    <h1 class="title d-flex justify-content-center text-uppercase"> CONECTAMOS A PERSONAS <br class="d-none d-sm-block">PARA QUE CUMPLAN SUS METAS </h1>
       </div>
+      <div @click="pageScroll()" id="arrow">
+        <a href="#" class="arrow arrow-1">
+          <span></span>
+        </a>
+        <a href="#" class="arrow arrow-2">
+          <span></span>
+        </a>
+        <a href="#" class="arrow arrow-3">
+          <span></span>
+        </a>
+      </div>
+
+
+
+
+
+
+
+
+      
     </header>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: "Home",
+  name: "Home"
 };
 </script>
 
@@ -29,8 +48,10 @@ export default {
   background-size: cover;
   color: #fff;
   text-align: center;
-  height: 90vh;
+  height: 100vh;
+  width: 100%;
 }
+
 .title {
   color: #fff;
   font-size: 28px;
