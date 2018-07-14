@@ -1,37 +1,22 @@
 <template>
   <div class="home">
     <!-- Header -->
-    <header class="masthead container-fluid">
+    <header class="masthead container-fluid text-white">
       <div class="title text-center">
 		    <h1 class="title d-flex justify-content-center text-uppercase"> CONECTAMOS A PERSONAS <br class="d-none d-sm-block">PARA QUE CUMPLAN SUS METAS </h1>
       </div>
-      <div @click="pageScroll()" id="arrow">
-        <a href="#" class="arrow arrow-1">
-          <span></span>
-        </a>
-        <a href="#" class="arrow arrow-2">
-          <span></span>
-        </a>
-        <a href="#" class="arrow arrow-3">
-          <span></span>
-        </a>
-      </div>
-
-
-
-
-
-
-
-
-      
+      <BtnHome/> 
     </header>
   </div>
 </template>
 
 <script>
+import BtnHome from '~/components/BtnHome.vue'
 export default {
-  name: "Home"
+  name: "Home",
+  components: {
+    BtnHome
+  }
 };
 </script>
 
@@ -46,19 +31,18 @@ export default {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: #fff;
   text-align: center;
-  height: 100vh;
+  height: 92vh;
   width: 100%;
 }
 
 .title {
-  color: #fff;
   font-size: 28px;
   font-weight: 800;
   letter-spacing: 0.8px;
   line-height: 50px;
-  padding: 5rem 0;
+  padding-top: 5rem;
+  padding-bottom: 1.2rem;
   text-align: center;
 }
 

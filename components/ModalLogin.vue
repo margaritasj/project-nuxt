@@ -8,23 +8,23 @@
             <span aria-hidden="true">×</span>
           </button>
         </div>
-        <div class="modal-body">
-          <form class="container-modal text-center">
+        <div class="modal-body p-0">
+          <form class="container-modal text-center p-3">
             <div class="input-group">
-              <div class="input-group-addon">
+              <div class="input-group-addon p-2">
                 <i class="fa fa-user" aria-hidden="true"></i>
               </div>
-              <input type="text" class="form-control" placeholder="Usuario">
+              <input type="text" class="form-control p-2" placeholder="Usuario">
             </div>
             <br>
             <div class="input-group">
-              <div class="input-group-addon">
+              <div class="input-group-addon p-2">
                 <i class="fas fa-key"></i>
               </div>
-              <input type="password" class="form-control" placeholder="Contraseña">
+              <input type="password" class="form-control p-2" placeholder="Contraseña">
             </div>
             <br>
-            <button class="btn btn-default btn-green" type="submit">ingresar</button>
+            <button class="btn btn-default btn-green text-uppercase" type="submit">ingresar</button>
             <br>
           </form>
         </div>
@@ -48,7 +48,6 @@ export default {
 
 .container-modal {
   width: 100%;
-  padding: 1rem;
 }
 
 .display-none {
@@ -59,10 +58,6 @@ export default {
   padding: 0.25rem;
 }
 
-.modal-body {
-  padding: 0;
-}
-
 i {
   color: #72a4b2;
   padding: 0.35rem;
@@ -70,14 +65,13 @@ i {
 
 .input {
   width: 100%;
-  padding: 15px;
   border: none;
 }
 
 .form-control {
   background: #f1f1f1;
   border-radius: 2rem !important;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   padding: 0.4rem;
 }
@@ -86,7 +80,6 @@ i {
   background: #72a4b2;
   color: #fff;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 /* ------------ Media para tablet y desktop------------ */
@@ -112,7 +105,7 @@ i {
 
 @media (min-width: 1024px) {
   .style-modal {
-    margin-left: 42rem;
+    margin-left: 45rem;
   }
 }
 @media (min-width: 1200px) {
