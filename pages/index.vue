@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import BtnHome from '~/components/BtnHome.vue'
+import BtnHome from '~/components/index/GroupBtn.vue'
 export default {
   name: "Home",
   components: {
