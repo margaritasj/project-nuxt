@@ -6,18 +6,20 @@
           <div>
             <img src="~/assets/images/prestamo.png" alt="icon-loan" class="icon-loan mg-icon">
           </div>
-          <nux-link class="btn btn-lg text-uppercase text-white btn-loan" to="/prestamos">
-            <span class="d-none">pide tu préstamo </span>
-            <span class="d-md-none d-xs-block d-sm-block">préstamo</span>
-          </nux-link>
+          <div class=" text-center">
+            <nux-link class="btn btn-lg text-uppercase text-white btn-loan" to="/prestamos">
+              <span class="d-none d-md-block">pide tu préstamo </span>
+              <span class="d-md-none">préstamo</span>
+            </nux-link>
+          </div>
         </div>
         <div class="btn-group flex-column" role="group" aria-label="Second group"> 
           <div>
             <img src="~/assets/images/inversion.png" alt="icon-invert-" class="icon-invert mg-icon">
           </div>
           <nux-link class="btn btn-lg text-uppercase text-white text-center btn-invert" to="/invertir">
-            <span class="d-none">quiero</span>
-            <span class="d-md-none d-xs-block d-sm-block">invertir</span>
+            <span class="d-none d-md-block">quiero invertir</span>
+            <span class="d-md-none">invertir</span>
           </nux-link>
         </div>
       </div>
@@ -25,9 +27,7 @@
   </div>
 </template>
 <script>
-export default {
-  
-}
+
 </script>
 
 <style scoped>
@@ -42,8 +42,6 @@ export default {
   padding: 10px 0;
   border: none;
 }
-
-
 
 .btn-group > .btn:not(:first-child) {
   border-radius: 3px;
@@ -99,7 +97,7 @@ export default {
 @media (min-width: 1024px) {
   .btn {
     width: 15rem;
-    display: inline-flex;
+    display: flow-root;
   }
 }
 

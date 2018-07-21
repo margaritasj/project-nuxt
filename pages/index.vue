@@ -11,9 +11,10 @@
 </template>
 
 <script>
-import BtnHome from '~/components/index/GroupBtn.vue'
+import BtnHome from "~/components/index/GroupBtn.vue";
 export default {
   name: "Home",
+  layout: "empty",
   components: {
     BtnHome
   }
@@ -32,25 +33,48 @@ export default {
   -o-background-size: cover;
   background-size: cover;
   text-align: center;
-  height: 92vh;
+  height: 100vh;
   width: 100%;
 }
 
 .title {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 800;
   letter-spacing: 0.8px;
   line-height: 50px;
-  padding-top: 5rem;
+  padding-top: 3.7rem;
   padding-bottom: 1.2rem;
   text-align: center;
 }
 
-@media (min-width: 320px) {
-  .title {
-    font-size: 28px;
-    line-height: 1.3;
+/* ------------ Media para tablet y desktop------------ */
+@media (min-width: 375px) {
+  .masthead {
+    height: 78vh;
   }
 }
+
+@media (min-width: 425px) {
+  .masthead {
+    height: 75vh;
+  }
+
+  .title {
+    font-size: 30px;
+    padding-top: 4;
+  }
+}
+
+@media (min-width: 768px) {
+  .masthead {
+    height: 70vh;
+  }
+
+  .title {
+    font-size: 35px;
+    padding-top: 5rem;
+  }
+}
+
 </style>
 
