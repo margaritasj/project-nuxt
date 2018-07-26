@@ -40,6 +40,7 @@ export default {
   font-weight: 700;
   padding: 5px 0;
   letter-spacing: 0.2px;
+  z-index: 4000;
 }
 
 .line-black span {

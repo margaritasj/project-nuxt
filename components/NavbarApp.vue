@@ -1,6 +1,6 @@
 <template>
-  <div class="">
-    <nav class="navbar navbar-expand-lg fixed-top">
+  <div>
+    <nav class="navbar navbar-expand-lg fixed-top" :class="{'scrolled':scrolled}">
       <div class="container-fluid">
 				<logo/>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,12 +22,27 @@
 
 <script>
 import Logo from "./Logo.vue";
-export default {
-  name: "NavBar",
-  components: {
-    Logo
+  export default {
+    components: {
+      Logo
+    },
+    data() {
+      return {
+        scrolled: false,
+      }
+    },
+    methods: {
+      handleScroll() {
+        this.scrolled = window.scrollY > 50;
+      }
+    },
+    beforeMount() {
+      window.addEventListener('scroll', this.handleScroll);
+    },
+    beforeDestroy() {
+      window.removeEventListener('scroll', this.handleScroll);
+    }
   }
-};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -36,11 +51,13 @@ export default {
   z-index: 1000;
 }
 button {
-  color: #fff;
+  color: #fff;;
 }
 .navbar {
   margin-top: 1rem;
   padding: 0.9rem 0;
+  transition: 0.35s all ease;
+  color: #fff;
 }
 .navbar-collapse {
   margin: 0.8rem;
@@ -92,4 +109,20 @@ button {
     border-radius: 2rem;
   }
 }
+
+/* ------------------ Scroll Navbar ------------------ */
+
+
+.scrolled {
+  background: #eee;
+  z-index: 3000;
+  color: #000!important;
+}
+
+.scrolled > nuxt-link.navbar-item {
+  color: #000!important;
+}
+
+
+/* --------------------------------------------------- */
 </style>

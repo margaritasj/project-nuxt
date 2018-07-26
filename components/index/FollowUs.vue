@@ -1,7 +1,7 @@
 <template>
 <!-- Seccion de siguenos -->
   <section class="container-fluid img-green text-white pt-5">
-		<div class="row m-3">
+		<div class="row">
 			<h5 class="col-12 text-uppercase pt-5 pb-5">Síguenos en: 
         <img src="@/assets/images/fb-circular-2.png" alt="fb-circular">
       </h5>
@@ -28,7 +28,7 @@ h5 {
 }
 
 img {
-  width: 65px;
+  width: 60px;
 }
 
 /* ------------ Media para tablet y desktop------------ */
@@ -39,11 +39,12 @@ img {
   }
 
   h5 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   img {
     width: 70px;
+
   }
 }
 

@@ -16,6 +16,7 @@
     "bootstrap": "^4.1.1",
     "jquery": "^3.3.1",
     "nuxt": "^1.0.0",
+    "nuxt-google-tag-manager": "^0.1.0",
     "popper.js": "^1.14.3"
   },
   "devDependencies": {

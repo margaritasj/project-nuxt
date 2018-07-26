@@ -13,7 +13,7 @@ export default {
 		Arrow
 	},
 	props:{
-		nota: String
+		nota: Object
 	},
 };
 </script>
