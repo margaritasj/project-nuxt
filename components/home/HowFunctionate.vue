@@ -22,8 +22,8 @@
   </section>
 </template>
 <script>
-import Card from "@/components/index/Card";
-import LineTitle from "@/components/index/LineTitle";
+import Card from "@/components/home/Card";
+import LineTitle from "@/components/home/LineTitle";
 
 export default {
   data() {
@@ -45,7 +45,8 @@ export default {
           title: "inversionista",
           description:
             "Rentabiliza mensualmente sus ahorros invirtiendo en proyectos de personas.",
-          bgcolor: "bg-light"
+          bgcolor: "bg-light",
+          icon:"i-none"
         }
       ]
     };
@@ -76,6 +77,7 @@ h5 {
 .img-inv {
   z-index: 2000;
 }
+
 
 
 /* ------------ Media para tablet y desktop------------ */

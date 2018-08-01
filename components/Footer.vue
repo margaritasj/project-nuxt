@@ -2,7 +2,11 @@
   <footer class="container-fluid">
     <div class="row bg-grey pd-f">
       <div class="col-12 col-md-4 pd-md">
-        <Logo/>
+        <div class="logo">
+          <nuxt-link class="navbar-brand nav-logo js-scroll-trigger" to="/">
+            <div class="logo-white logo-green" ></div>
+          </nuxt-link>
+        </div>
         <p class="font-footer text-justify m-f font-w">Prestamype es una marca de P2P Finance Consulting SAC, empresa registrada en la Superintendencia de Banca y Seguros (SBS – Resolución N° 03470). Más detalles
           <nuxt-link to="/nosotros" class="link-decoration">aquí</nuxt-link>.
         </p>
@@ -79,11 +83,10 @@
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
 export default {
   name: "Footer",
   components: {
-    Logo
+
   }
 };
 </script>
@@ -147,6 +150,21 @@ h5 {
 li {
   padding-top: 1rem;
   list-style: none;
+}
+
+.logo-white {
+  background-image: url("~/assets/images/logo-prestamype-blanco.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  height: 2rem;
+  width: 10rem;
+  padding: 1rem;
 }
 
 /* ------------ Media para tablet y desktop------------ */

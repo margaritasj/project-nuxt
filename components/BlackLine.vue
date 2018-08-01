@@ -3,8 +3,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12 d-flex justify-content-end line-black fixed-top">
-					<span href="#login" data-toggle="modal" data-backdrop="false">{{ txt }} </span>
-          <!-- Modal Login -->
+					<span><img src="~/assets/images/icono_telefono_footer.png" alt="">{{ txt }}</span>
 					<span>
 						<a href="https://www.facebook.com/Prestamype/" target="_blank" class="f-icon">
 							<img src="~/assets/images/facebook.png">
@@ -48,6 +47,16 @@ export default {
 }
 
 .f-icon {
+  padding: 0 1rem;
+}
+
+span {
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0 .4rem;
+}
+
+img {
   padding: 0 1rem;
 }
 </style>

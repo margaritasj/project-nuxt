@@ -2,18 +2,18 @@
 	<div class="col-12 text-center p-4 mb-0">
 		<h6 class="text-uppercase font-weight-bold p-3"> {{ nota.title }} </h6>
 		<p class="m-2"> {{ nota.description }} </p>
-		<Arrow/>
+		<Arrow v-if="Object.keys(this.nota).length < 4"/>
 	</div>
 </template>
 <script>
-import Arrow from '@/components/index/Arrow'
+import Arrow from '@/components/home/Arrow'
 
 export default {
 	components: {
 		Arrow
 	},
 	props:{
-		nota: Object
+		nota: Object,
 	},
 };
 </script>

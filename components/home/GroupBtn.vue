@@ -7,20 +7,20 @@
             <img src="~/assets/images/prestamo.png" alt="icon-loan" class="icon-loan mg-icon">
           </div>
           <div class=" text-center">
-            <nux-link class="btn btn-lg text-uppercase text-white btn-loan" to="/prestamos">
+            <nuxt-link class="btn btn-lg text-uppercase text-white btn-loan" to="/prestamos">
               <span class="d-none d-md-block">pide tu préstamo </span>
               <span class="d-md-none">préstamo</span>
-            </nux-link>
+            </nuxt-link>
           </div>
         </div>
         <div class="btn-group flex-column" role="group" aria-label="Second group"> 
           <div>
             <img src="~/assets/images/inversion.png" alt="icon-invert-" class="icon-invert mg-icon">
           </div>
-          <nux-link class="btn btn-lg text-uppercase text-white text-center btn-invert" to="/invertir">
+          <nuxt-link class="btn btn-lg text-uppercase text-white text-center btn-invert" to="/invertir">
             <span class="d-none d-md-block">quiero invertir</span>
             <span class="d-md-none">invertir</span>
-          </nux-link>
+          </nuxt-link>
         </div>
       </div>
     </div>

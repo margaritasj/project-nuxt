@@ -13,8 +13,8 @@
   </section>
 </template>
 <script>
-import LineTitle from "@/components/index/LineTitle";
-import JournalLogo from "@/components/index/JournalLogo";
+import LineTitle from "@/components/home/LineTitle";
+import JournalLogo from "@/components/home/JournalLogo";
 
 export default {
   components: {
@@ -51,5 +51,15 @@ export default {
 </script>
 <style scoped>
 
+.banner, banner *
+{
+  transition: all .3s linear;
+}
 
+@media (min-width: 768px) {
+
+  h5 {
+    font-size: 2rem;
+  }
+}
 </style>

@@ -35,7 +35,7 @@
 	</section>
 </template>
 <script>
-import LineTitle from "@/components/index/LineTitle";
+import LineTitle from "@/components/home/LineTitle";
 export default {
   components: {
     linetitle: LineTitle

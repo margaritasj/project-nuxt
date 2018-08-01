@@ -1,7 +1,6 @@
 <template>
   <div>
-    <BlackLine txt="INGRESAR"/>
-    <ModalLogin/>
+    <BlackLine txt="(01)480-0708"/>
     <NavbarApp/>
     <nuxt/>
     <Footer/>
@@ -9,14 +8,12 @@
 </template>
 <script>
   import BlackLine from '~/components/BlackLine.vue'
-  import ModalLogin from '~/components/ModalLogin.vue'
   import NavbarApp from '~/components/NavbarApp.vue'
   import Footer from '~/components/Footer.vue'
 
   export default {
     components: {
     BlackLine,
-    ModalLogin,
     NavbarApp,
     Footer
     }

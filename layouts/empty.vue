@@ -1,7 +1,6 @@
 <template>
   <div>
-    <BlackLine txt="INGRESAR"/>
-    <ModalLogin/>
+    <BlackLine txt="(01)480-0708"/>
     <NavbarApp/>
     <nuxt/>
     <HowFunctionate/>
@@ -15,19 +14,17 @@
 
 <script>
 import BlackLine from "@/components/BlackLine";
-import ModalLogin from "@/components/ModalLogin"
 import NavbarApp from "@/components/NavbarApp";
-import HowFunctionate from "@/components/index/HowFunctionate";
-import FollowUs from "@/components/index/FollowUs";
-import WhoSpeak from "@/components/index/WhoSpeak";
-import Testimonials from "@/components/index/Testimonials";
-import OurAllies from "@/components/index/OurAllies"
+import HowFunctionate from "@/components/home/HowFunctionate";
+import FollowUs from "@/components/home/FollowUs";
+import WhoSpeak from "@/components/home/WhoSpeak";
+import Testimonials from "@/components/home/Testimonials";
+import OurAllies from "@/components/home/OurAllies"
 import Footer from "@/components/Footer"
 
 export default {
   components: {
     BlackLine,
-    ModalLogin,
     NavbarApp,
     HowFunctionate,
     FollowUs,

@@ -39,6 +39,10 @@ export default {
 </script>
 <style scoped>
 /* ------------- Para modal en general ------------- */
+.modal {
+  z-index: 5000;
+}
+
 .style-modal {
   display: block;
   margin-top: 2rem;
