@@ -1,4 +1,5 @@
 <template>
+	<!-- Seccion testimonios de exito -->
 	<section class="container-fluid bg-green">
 		<div class="row">
 			<div class="col-12 text-center pt-5">
@@ -35,53 +36,56 @@
 	</section>
 </template>
 <script>
-import LineTitle from "@/components/home/LineTitle";
-export default {
-  components: {
-    linetitle: LineTitle
-  }
-};
+
+	import LineTitle from "@/components/home/LineTitle";
+	export default {
+		components: {
+			linetitle: LineTitle
+		}
+	};
 </script>
 
 <style scoped>
-.bg-green {
-  background-color: rgba(16, 152, 83, 0.89);
-}
 
-.carousel-item {
-  height: 100%;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  font-size: 0.9rem;
-}
+	.bg-green {
+		background-color: rgba(16, 152, 83, 0.89);
+	}
 
-.name-user {
-  margin: -17px auto 0;
-  display: table;
-  width: auto;
-  background: #01cd78;
-  padding: 9px 35px;
-  border-radius: 12px;
-  text-align: center;
-  color: #fff;
-  box-shadow: 0 9px 18px rgba(0, 0, 0, 0.12), 0 5px 7px rgba(0, 0, 0, 0.05);
-}
+	.carousel-item {
+		height: 100%;
+		padding: 1.5rem;
+		border-radius: 1rem;
+		font-size: 0.9rem;
+	}
 
-.shadow-effect {
-  background: transparent;
-  border-radius: 1rem;
-  text-align: center;
-  border: 1px solid #53a04c;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.02);
-}
+	.name-user {
+		margin: -17px auto 0;
+		display: table;
+		width: auto;
+		background: #01cd78;
+		padding: 9px 35px;
+		border-radius: 12px;
+		text-align: center;
+		color: #fff;
+		box-shadow: 0 9px 18px rgba(0, 0, 0, 0.12), 0 5px 7px rgba(0, 0, 0, 0.05);
+	}
 
-@media (min-width: 768px) {
-  .h5 {
-    font-size: 2rem;
-  }
+	.shadow-effect {
+		background: transparent;
+		border-radius: 1rem;
+		text-align: center;
+		border: 1px solid #53a04c;
+		box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.02);
+	}
 
-  p {
-    font-size: 1.5rem;
-  }
-}
+	@media (min-width: 768px) {
+		.h5 {
+			font-size: 2rem;
+		}
+
+		p {
+			font-size: 1.5rem;
+		}
+	}
+
 </style>

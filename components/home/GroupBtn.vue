@@ -26,84 +26,82 @@
     </div>
   </div>
 </template>
-<script>
-
-</script>
-
 <style scoped>
-.btn {
-  width: 8rem;
-  margin: 0.2rem;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 0.3rem;
-  cursor: pointer;
-  letter-spacing: 0.2px;
-  padding: 10px 0;
-  border: none;
-}
 
-.btn-group > .btn:not(:first-child) {
-  border-radius: 3px;
-}
-
-.icon-loan {
-  width: 3rem;
-}
-
-.icon-invert {
-  width: 4rem;
-}
-
-.mg-icon {
-  margin: 0.2rem;
-}
-
-.btn-loan {
-  background: #01cd78;
-}
-
-.btn-invert {
-  background: #53a6b4;
-}
-
-.btn-loan:hover {
-  box-shadow: 0 0 20px #01cd78;
-}
-
-.btn-invert:hover {
-  box-shadow: 0 0 30px #53a6b4;
-}
-
-/* ------------ Media para tablet y desktop------------ */
-@media (min-width: 375px) {
   .btn {
-    width: 9.5rem;
+    width: 8rem;
+    margin: 0.2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.3rem;
+    cursor: pointer;
+    letter-spacing: 0.2px;
+    padding: 10px 0;
+    border: none;
   }
-}
 
-@media (min-width: 425px) {
-  .btn {
-    width: 10rem;
+  .btn-group > .btn:not(:first-child) {
+    border-radius: 3px;
   }
-}
 
-@media (min-width: 768px) {
-  .btn {
-    width: 18rem;
+  .icon-loan {
+    width: 3rem;
   }
-}
 
-@media (min-width: 1024px) {
-  .btn {
-    width: 15rem;
-    display: flow-root;
+  .icon-invert {
+    width: 4rem;
   }
-}
 
-@media (min-width: 1440px) {
-  .btn {
-    width: 17rem;
+  .mg-icon {
+    margin: 0.2rem;
   }
-}
+
+  .btn-loan {
+    background: #01cd78;
+  }
+
+  .btn-invert {
+    background: #53a6b4;
+  }
+
+  .btn-loan:hover {
+    box-shadow: 0 0 20px #01cd78;
+  }
+
+  .btn-invert:hover {
+    box-shadow: 0 0 30px #53a6b4;
+  }
+
+  /* ------------ Media para tablet y desktop------------ */
+  @media (min-width: 375px) {
+    .btn {
+      width: 9.5rem;
+    }
+  }
+
+  @media (min-width: 425px) {
+    .btn {
+      width: 10rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .btn {
+      width: 18rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .btn {
+      width: 15rem;
+      display: flow-root;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .btn {
+      width: 17rem;
+    }
+  }
+  
 </style>

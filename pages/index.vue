@@ -11,18 +11,19 @@
 </template>
 
 <script>
-import BtnHome from "~/components/home/GroupBtn.vue";
-export default {
-  name: "Home",
-  layout: "empty",
-  components: {
-    BtnHome
-  }
-};
+  import BtnHome from "~/components/home/GroupBtn.vue";
+  export default {
+    name: "Home",
+    layout: "empty",
+    components: {
+      BtnHome
+    }
+  };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
   .masthead {
     background-image: url("~/assets/images/banner-home.png");
     background-repeat: no-repeat;

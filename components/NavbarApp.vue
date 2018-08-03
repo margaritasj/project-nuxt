@@ -140,7 +140,7 @@ export default {
     }
   }
 
-  /* ------------------ Scrolled Navbar ------------------ */
+  /* ------------------ Estilos - Scrolled Navbar ------------------ */
 
   .scrolled {
     background: #fff;

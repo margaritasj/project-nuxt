@@ -1,5 +1,5 @@
 <template>
-<!-- Seccion - como funciona -->
+<!-- Seccion-como funciona -->
 	<section class="container bg-white">
 		<div class="row mt-5 mb-4">
 			<div class="col-12 text-center">
@@ -22,6 +22,7 @@
   </section>
 </template>
 <script>
+
 import Card from "@/components/home/Card";
 import LineTitle from "@/components/home/LineTitle";
 
@@ -58,50 +59,49 @@ export default {
 };
 </script>
 <style scoped>
-h5 {
-  letter-spacing: 0.1rem;
-  font-weight: 400;
-}
-
-.arrow-md-box {
-  position: absolute;
-  bottom: -15px;
-  z-index: 1000;
-}
-
-.arrow-md {
-  width: 100%;
-}
-
-.img-emp,
-.img-inv {
-  z-index: 2000;
-}
-
-
-
-/* ------------ Media para tablet y desktop------------ */
-@media (min-width: 375px) {
-}
-
-@media (min-width: 425px) {
-}
-
-@media (min-width: 768px) {
-  .card-md {
-    background-color: #f8f9fa !important;
-    border: none !important;
-    margin-bottom: 0!important;
-  }
 
   h5 {
-    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
   }
-}
 
-@media (min-width: 1024px) {
-}
+  .arrow-md-box {
+    position: absolute;
+    bottom: -15px;
+    z-index: 1000;
+  }
 
-@media (min-width: 1440px) {
-}
+  .arrow-md {
+    width: 100%;
+  }
+
+  .img-emp,
+  .img-inv {
+    z-index: 2000;
+  }
+
+  /* ------------ Media para tablet y desktop------------ */
+  @media (min-width: 375px) {
+  }
+
+  @media (min-width: 425px) {
+  }
+
+  @media (min-width: 768px) {
+    .card-md {
+      background-color: #f8f9fa !important;
+      border: none !important;
+      margin-bottom: 0!important;
+    }
+
+    h5 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1440px) {
+  }
 </style>
