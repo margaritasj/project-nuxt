@@ -37,7 +37,7 @@
 </template>
 <script>
 
-	import LineTitle from "@/components/home/LineTitle";
+	import LineTitle from "@/components/LineTitle";
 	export default {
 		components: {
 			linetitle: LineTitle

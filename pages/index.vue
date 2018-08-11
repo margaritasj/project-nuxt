@@ -2,7 +2,7 @@
   <div class="home">
     <!-- Header -->
     <header class="masthead container-fluid text-white">
-      <div class="title text-center">
+      <div class="pt-5 pt-7 text-center">
 		    <h1 class="title d-flex justify-content-center text-uppercase"> CONECTAMOS A PERSONAS <br class="d-none d-sm-block">PARA QUE CUMPLAN SUS METAS </h1>
       </div>
       <BtnHome/> 
@@ -62,7 +62,7 @@
 
     .title {
       font-size: 30px;
-      padding-top: 4;
+      padding-top: 2rem;
     }
   }
 
@@ -73,7 +73,18 @@
 
     .title {
       font-size: 35px;
-      padding-top: 5rem;
+      padding-top: 3rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .masthead {
+      height: 70vh;
+    }
+
+    .title {
+      font-size: 35px;
+      padding-top: 3rem;
     }
   }
 

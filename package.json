@@ -17,7 +17,8 @@
     "jquery": "^3.3.1",
     "nuxt": "^1.0.0",
     "nuxt-google-tag-manager": "^0.1.0",
-    "popper.js": "^1.14.3"
+    "popper.js": "^1.14.3",
+    "vee-validate": "^2.1.0-beta.7"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

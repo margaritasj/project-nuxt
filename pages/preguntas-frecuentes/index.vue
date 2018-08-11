@@ -1,5 +1,5 @@
 <template>
-  <div class="invert">
+  <div class="questions">
     <!-- Header -->
     <HeaderApp v-for="(infoh,index) in infos" :infoh="infoh" :key="index" class="parallax"/>
   </div>
@@ -9,8 +9,7 @@
  
  import HeaderApp from "@/components/HeaderApp"
   export default {
-    name: "invert",
-    layout: "invert",
+    name: "questions",
     components: {
       HeaderApp
     },
@@ -18,8 +17,8 @@
       return {
         infos: [
           {
-            txta: "RENTABILIZA TUS AHORROS",
-            txtb: "DE LA FORMA MÁS SEGURA"
+            txta: "Con nosotros no hay letra chica, ",
+            txtb: " Aquí resolvemos tus dudas."
           }
         ]
       }
@@ -32,9 +31,8 @@
   @import url(assets/css/header);
 
   .parallax {
-    background-image: url("https://res.cloudinary.com/prestamype/image/upload/v1533326661/banner-inv.png");
+    background-image: url("https://res.cloudinary.com/prestamype/image/upload/v1533859859/prestamype/background/preguntasc.png");
   }
 
 
 </style>
-

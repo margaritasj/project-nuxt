@@ -1,0 +1,29 @@
+.parallax {
+  margin-top: 2rem;
+  height: 90vh;
+  background-position: center center;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  line-height: 50px;
+  padding-top: 3.7rem;
+  padding-bottom: 1.2rem;
+  text-align: center;
+}
+
+@media (min-width: 425px) {
+
+}
+
+
+
+
+
+
+
+
+
+

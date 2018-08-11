@@ -24,7 +24,7 @@
 <script>
 
 import Card from "@/components/home/Card";
-import LineTitle from "@/components/home/LineTitle";
+import LineTitle from "@/components/LineTitle";
 
 export default {
   data() {

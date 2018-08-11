@@ -13,7 +13,7 @@
   </section>
 </template>
 <script>
-  import LineTitle from "@/components/home/LineTitle";
+  import LineTitle from "@/components/LineTitle";
   import JournalLogo from "@/components/home/JournalLogo";
   export default {
     

@@ -49,7 +49,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .fixed-top {
-    z-index: 1000;
+    z-index: 10000;
   }
 
   .navbar {
