@@ -1,12 +1,10 @@
 <template>
   <div class="text-center">
 		<label :for="info.model">{{ info.txtLabel }}</label>
-		<input :id="info.model" :type="info.type"  :v-model="info.name">
-      <!-- <input :class="{ email , error: !email.valid }" v-model="email.value"> -->
+		<input :id="info.model" :type="info.type"  :v-model="info.model" v-validate.initial="info.initial" :class="info.class" :placeholder="info.placeholder">
   </div>
 </template>
 <script>
-
   /*const emailRegExp = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/; */
 
   export default {

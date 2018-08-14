@@ -18,7 +18,7 @@
     "nuxt": "^1.0.0",
     "nuxt-google-tag-manager": "^0.1.0",
     "popper.js": "^1.14.3",
-    "vee-validate": "^2.1.0-beta.7"
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

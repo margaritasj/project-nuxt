@@ -2,7 +2,7 @@
   <div class="home">
     <!-- Header -->
     <header class="masthead container-fluid text-white">
-      <div class="pt-5 pt-7 text-center">
+      <div class="pt-5 text-center">
 		    <h1 class="title d-flex justify-content-center text-uppercase"> CONECTAMOS A PERSONAS <br class="d-none d-sm-block">PARA QUE CUMPLAN SUS METAS </h1>
       </div>
       <BtnHome/> 
@@ -86,6 +86,10 @@
       font-size: 35px;
       padding-top: 3rem;
     }
+
+    .pt-7 {
+     padding-top: 15rem;
+   }
   }
 
 </style>

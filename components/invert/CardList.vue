@@ -1,16 +1,16 @@
 <template>
   <section class="container-fluid bg-img pt-5 pb-5">
     <div class="card m-2 p-1">
-      <div class="row p-2">
+      <div class="row">
         <div class="col-12 col-lg-6 line-bottom">
           <h4 class="m-4 minititle">Características</h4>
-          <ul class="text-left">
+          <ul class="text-left pl-5">
             <item-list v-for="(list,index) in characteristics" :list="list" :key="index"/>
           </ul>
         </div>
         <div class="col-12 col-lg-6">
           <h4 class="m-4 minititle">Beneficios</h4>
-          <ul class="text-left">
+          <ul class="text-left pl-5">
             <item-list v-for="(list,index) in benefits" :list="list" :key="index"/>
           </ul>
         </div>

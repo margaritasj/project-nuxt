@@ -1,7 +1,7 @@
 <template>
   <div class="black">
 		<div class="container">
-			<div class="row">
+			<div class="row pr-5">
 				<div class="col-12 d-flex justify-content-end line-black fixed-top">
 					<span><img src="~/assets/images/icono_telefono_footer.png" alt="">{{ txt }}</span>
 					<span>
