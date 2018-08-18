@@ -1,7 +1,7 @@
 <template>
   <div class="text-center">
 		<label :for="info.model">{{ info.txtLabel }}</label>
-		<input :id="info.model" :type="info.type"  :v-model="info.model" v-validate.initial="info.initial" :class="info.class" :placeholder="info.placeholder">
+		<input :id="info.model" :type="info.type"  :v-model="info.model" :class="info.class" :placeholder="info.placeholder">
   </div>
 </template>
 <script>

@@ -39,8 +39,6 @@
 </script>
 <style scoped>
 
-  * {
-    font-family: "Montserrat", sans-serif;
-  }
+  @import url(assets/css/root);
   
 </style>

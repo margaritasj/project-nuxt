@@ -5,9 +5,10 @@
 				<counter-text textC="Si inviertes"/>
 				<simulate-input/>
 				<counter-text textC="Gana anualmente"/>
-				<counter-amount amount="1300"/>
+				<div class="text-center">
+					<h3><small> S/. </small> </h3>
+				</div>
 				<counter-text textC="Tasa fija"/>
-
 			</form>
 		</div>
 	</div>
@@ -16,19 +17,28 @@
 
 	import CounterText from "@/components/simulate-counter/CounterText";
 	import SimulateInput from "@/components/simulate-counter/SimulateInput";
-	import CounterAmount from "@/components/simulate-counter/CounterAmount"
 
 	export default {
 		components: {
 			CounterText,
 			SimulateInput,
-			CounterAmount
 		}
+		
 	} 
 
 </script>
 <style>
-
+	h3 small {
+		font-weight: 500;
+		color: #2bb5c5;
+	}
+	h3 {
+		margin: 0;
+		color: #424242;
+		font-size: 40px;
+		font-weight: 800;
+		color: #2bb5c5;
+	}
 
 
 

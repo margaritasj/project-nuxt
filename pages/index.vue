@@ -25,7 +25,7 @@
 <style scoped>
 
   .masthead {
-    background-image: url("~/assets/images/banner-home.png");
+    background-image: url("https://res.cloudinary.com/prestamype/image/upload/v1533859859/prestamype/background/banner-home.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -86,11 +86,8 @@
       font-size: 35px;
       padding-top: 3rem;
     }
-
-    .pt-7 {
-     padding-top: 15rem;
-   }
   }
+
 
 </style>
 

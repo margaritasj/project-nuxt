@@ -24,10 +24,8 @@
 					{
 						txtLabel: "Nombres",
 						type: "text",
-						initial:"required|alpha",
 						name:"first_name",
 						model: "first_name",
-						class:"'{input':true, 'is-danger':errors.has('first_name')}",
 						placeholder:"prueba"
 					},
 					{
