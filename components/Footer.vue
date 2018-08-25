@@ -11,23 +11,11 @@
           <nuxt-link to="/nosotros" class="link-decoration">aquí</nuxt-link>.
         </p>
         <div class="icons m-f">
-          <div class="d-flex justify-content pd-top">
+          <div class="d-flex justify-content pd-top" v-for="(info, index) in infos" :info="info" :key="index">
             <div class="icon">
-              <img src="~/assets/images/icono_direccion_footer.png">
+              <img :src="info.src">
             </div>
-            <p class="txt-icon font-w">Calle Martir Olaya 129 Of 1304 <br>Miraflores, Lima</p>
-					</div>
-          <div class="d-flex justify-content pd-top">
-            <div class="icon">
-              <img src="~/assets/images/icono_correo_footer.png">
-            </div>
-            <p class="txt-icon font-w text-left">info@prestamype.com</p>
-					</div>
-          <div class="d-flex justify-content pd-top">
-            <div class="icon">
-              <img src="~/assets/images/icono_telefono_footer.png">
-            </div>
-            <p class="txt-icon font-w text-left">(01) 480 - 0708</p>
+            <p class="txt-icon font-w">{{ info.p }} <br> {{ info.b }} </p>
 					</div>
         </div>
       </div>
@@ -35,42 +23,16 @@
         <h5 class="text-uppercase text-center">mapa del sitio</h5>
         <div class="info text-uppercase font-w font-footer">
           <ul>
-            <li>
-              <nuxt-link to="/prestamos" class="link-decoration">Pide tu Préstamo</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/invertir" class="link-decoration">Quiero Invertir</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/nosotros" class="link-decoration">nosotros</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/preguntas" class="link-decoration">preguntas frecuentes</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/articulos" class="link-decoration">noticias</nuxt-link>
+            <li v-for="(link, index) in links" :link="link" :key="index">
+              <nuxt-link :to="link.url" class="link-decoration">{{ link.txt }}</nuxt-link>
             </li>
           </ul>
         </div>
       </div>
       <div class="col-12 col-md-5 pd-md">
         <h5 class="text-uppercase text-center">aviso legal</h5>
-        <p class="font-footer text-justify font-w">Prestamype pone en relación a personas que buscan un préstamo con inversionistas
-          interesados en prestar directamente su capital. Prestamype evalúa los perfiles de
-          los empresarios, elabora el contrato de préstamo con garantía hipotecaria, realiza
-          la gestión del préstamo y el seguimiento hasta el levantamiento de la hipoteca. No
-          realiza intermediación financiera.
-        </p>
-        <p class="font-footer text-justify font-w"> Los contratos de préstamo son de un periodo de 12, 18 o 24 meses, sin periodo
-          mínimo de cancelación de acuerdo al Código del Consumidor (Ley N° 29571) y pueden
-          ser renovados al final del periodo. Su Tasa Costo Efectivo Anual (TCEA) promedio
-          es de 34%.
-        </p>
-        <p class="font-footer text-justify font-w">
-          La TCEA de Prestamype incluye a la tasa de interés y todos los gastos vinculados
-          al préstamo, incluso incluye al levantamiento de la hipoteca. A título de comparación, la tasa de interés anual (TEA, que no incluye los gastos)
-          promedio del sistema financiero para créditos a la microempresa en Perú es de 44%
-          (enero 2017).
+        <p class="font-footer text-justify font-w" v-for="(paragraph, index) in paragraphs" :paragraph="paragraph" :key="index">
+          {{ paragraph }}
         </p>
       </div>
     </div>
@@ -85,7 +47,51 @@
 <script>
 export default {
   name: "Footer",
-  components: {
+  data() {
+    return {
+      infos:[
+        {
+          src: "https://res.cloudinary.com/prestamype/image/upload/v1535132390/prestamype/icons/icono_direccion_footer.png",
+          p: "Calle Martir Olaya 129 Of 1304",
+          b: "Miraflores, Lima"
+        },
+        {
+          src: "https://res.cloudinary.com/prestamype/image/upload/v1535132390/prestamype/icons/icono_correo_footer.png",
+          p: "info@prestamype.com"
+        },
+        {
+          src: "https://res.cloudinary.com/prestamype/image/upload/v1535132390/prestamype/icons/icono_telefono_footer.png",
+          p: "(01) 480 - 0708"
+        }
+      ],
+      links:[
+        {
+          url: "/prestamos",
+          txt: "Pide tu Préstamo"
+        },
+        {
+          url: "/invertir",
+          txt: "Quiero Invertir"
+        },
+        {
+          url: "/nosotros",
+          txt: "nosotros"
+        },
+        {
+          url: "/preguntas",
+          txt: "preguntas frecuentes"
+        },
+        {
+          url: "/articulos",
+          txt: "noticias"
+        }
+      ],
+      paragraphs: [
+        "Prestamype pone en relación a personas que buscan un préstamo con inversionistas interesados en prestar directamente su capital. Prestamype evalúa los perfiles de los empresarios, elabora el contrato de préstamo con garantía hipotecaria, realiza la gestión del préstamo y el seguimiento hasta el levantamiento de la hipoteca. No realiza intermediación financiera.",
+        "Los contratos de préstamo son de un periodo de 12, 18 o 24 meses, sin periodo mínimo de cancelación de acuerdo al Código del Consumidor (Ley N° 29571) y pueden ser renovados al final del periodo. Su Tasa Costo Efectivo Anual (TCEA) promedio es de 34%.",
+        "La TCEA de Prestamype incluye a la tasa de interés y todos los gastos vinculados al préstamo, incluso incluye al levantamiento de la hipoteca. A título de comparación, la tasa de interés anual (TEA, que no incluye los gastos) promedio del sistema financiero para créditos a la microempresa en Perú es de 44% (enero 2017)."
+      ]
+    }
 
   }
 };

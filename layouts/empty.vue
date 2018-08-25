@@ -39,6 +39,6 @@
 </script>
 <style scoped>
 
-  @import url(assets/css/root);
+  @import url(assets/css/root.css);
   
 </style>

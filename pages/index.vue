@@ -1,93 +1,120 @@
 <template>
-  <div class="home">
-    <!-- Header -->
-    <header class="masthead container-fluid text-white">
-      <div class="pt-5 text-center">
-		    <h1 class="title d-flex justify-content-center text-uppercase"> CONECTAMOS A PERSONAS <br class="d-none d-sm-block">PARA QUE CUMPLAN SUS METAS </h1>
-      </div>
+  <div class="parallax">
+    <header-app v-for="(infoh,index) in infos" :infoh="infoh" :key="index"/>
+    <div class="container">
       <BtnHome/> 
-    </header>
+    </div>
   </div>
 </template>
 
 <script>
-  import BtnHome from "~/components/home/GroupBtn.vue";
+  import HeaderApp from "@/components/HeaderApp";
+  import BtnHome from "@/components/home/GroupBtn";
   export default {
     name: "Home",
     layout: "empty",
     components: {
+      HeaderApp,
       BtnHome
+    },
+    data() {
+      return {
+        infos: [
+          {
+            txta: "CONECTAMOS A PERSONAS",
+            txtb: " PARA QUE CUMPLAN SUS METAS "
+          }
+        ]
+      }
+    },
+    async asyncData() {
+      const title = "Prestamype";
+      const description = "El Programa de Formación Docente de la universidad está orientado de forma prioritaria a facilitar y apoyar a nuestros docentes al desarrollo de sus necesidades de tipo formativo, dotándoles de las estrategias y recursos necesarios para desarrollar una serie de nuevas competencias profesionales. Por este motivo es preciso reflexionar sobre las nuevas exigencias profesionales y apoyar el desarrollo de dichas competencias desde la formación del profesorado y desde el enfoque de nuestra universidad.";
+      const keywords = "Prestamype,inversionistas,empresarios,prestamos,invertir,rentabilidad,garantía,hipotecaria";
+      const canonical = "https://www.prestamype.com/";
+      const locale = "es_ES";
+      const type = "website";
+      const image = "images/prestamype.jpg";
+
+      return {
+        title,
+        description,
+        keywords,
+        canonical,
+        locale,
+        type,
+        image
+      };
+    },
+    head() {
+      return {
+        title: this.title + " | Prestamos colaborativos para mypes",
+        meta: [
+          {
+            hid: "description",
+            name: "description",
+            content: this.description
+          },
+          {
+            hid: "keywords",
+            name: "keywords",
+            content: this.keywords
+          },
+          {
+            hid: "subject",
+            name: "subject",
+            content: this.title
+          },
+          {
+            hid: "canonical",
+            name: "canonical",
+            content: this.canonical
+          },
+
+          // Meta Facebook
+          {
+            hid: "og:locale",
+            property: "og:locale",
+            content: this.locale
+          },
+          {
+            hid: "og:type",
+            property: "og:type",
+            content: this.type
+          },
+          {
+            hid: "og:title",
+            property: "og:title",
+            content: this.title
+          },
+          {
+            hid: "og:url",
+            property: "og:url",
+            content: this.canonical
+          },
+          {
+            hid: "og:site_name",
+            property: "og:site_name",
+            content: this.title
+          },
+          {
+            hid: "og:image",
+            property: "og:image",
+            content: this.image
+          }
+        ]
+      }  
     }
   };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  @import url(assets/css/root.css);
+  @import url(assets/css/header);
 
-  .masthead {
+  .parallax {
     background-image: url("https://res.cloudinary.com/prestamype/image/upload/v1533859859/prestamype/background/banner-home.png");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    text-align: center;
-    height: 100vh;
-    width: 100%;
+    padding: 0rem 1rem;
   }
-
-  .title {
-    font-size: 25px;
-    font-weight: 800;
-    letter-spacing: 0.8px;
-    line-height: 50px;
-    padding-top: 3.7rem;
-    padding-bottom: 1.2rem;
-    text-align: center;
-  }
-
-  /* ------------ Media para tablet y desktop------------ */
-  @media (min-width: 375px) {
-    .masthead {
-      height: 78vh;
-    }
-  }
-
-  @media (min-width: 425px) {
-    .masthead {
-      height: 75vh;
-    }
-
-    .title {
-      font-size: 30px;
-      padding-top: 2rem;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .masthead {
-      height: 70vh;
-    }
-
-    .title {
-      font-size: 35px;
-      padding-top: 3rem;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .masthead {
-      height: 70vh;
-    }
-
-    .title {
-      font-size: 35px;
-      padding-top: 3rem;
-    }
-  }
-
-
 </style>
 

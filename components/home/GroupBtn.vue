@@ -1,43 +1,57 @@
 <template>
-  <div class="container-fluid">
-    <div class="row text-center d-flex justify-content-center">
-      <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-        <div class="btn-group flex-column" role="group" aria-label="First group">
-          <div>
-            <img src="~/assets/images/prestamo.png" alt="icon-loan" class="icon-loan mg-icon">
-          </div>
-          <div class=" text-center">
-            <nuxt-link class="btn btn-lg text-uppercase text-white btn-loan" to="/prestamos">
-              <span class="d-none d-md-block">pide tu préstamo </span>
-              <span class="d-md-none">préstamo</span>
-            </nuxt-link>
-          </div>
-        </div>
-        <div class="btn-group flex-column" role="group" aria-label="Second group"> 
-          <div>
-            <img src="~/assets/images/inversion.png" alt="icon-invert-" class="icon-invert mg-icon">
-          </div>
-          <nuxt-link class="btn btn-lg text-uppercase text-white text-center btn-invert" to="/invertir">
-            <span class="d-none d-md-block">quiero invertir</span>
-            <span class="d-md-none">invertir</span>
-          </nuxt-link>
-        </div>
+  <div class="btn-toolbar row text-center d-flex justify-content-center pb-5" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group flex-column" role="group" v-for="(icon, index) in icons" :icon="icon" :key="index">
+      <div>
+        <img :src="icon.img" :alt="icon.name" :class="icon.name" class="mg-icon">
       </div>
+      <nuxt-link class="btn btn-lg text-uppercase text-white" :class="icon.color" :to="icon.url">
+        <span class="d-none d-md-block">{{ icon.txta }}</span>
+        <span class="d-md-none">{{ icon.txtb }}</span>
+      </nuxt-link>
     </div>
   </div>
 </template>
+<script>
+  export default {
+    data() {
+      return {
+        icons: [
+          {
+            img: "https://res.cloudinary.com/prestamype/image/upload/v1535070235/prestamype/icons/prestamo.png",
+            name: "icon-loan",
+            color: "btn-loan",
+            url: "/prestamos",
+            txta: "pide tu préstamo",
+            txtb: "préstamo"
+          },
+          {
+            img: "https://res.cloudinary.com/prestamype/image/upload/v1535070200/prestamype/icons/inversion.png",
+            name: "icon-invert",
+            color: "btn-invert",
+            url: "/invertir",
+            txta: "quiero invertir",
+            txtb: "invertir"
+          }
+
+        ]
+      }
+    }
+  }
+  
+</script>
 <style scoped>
 
   .btn {
     width: 8rem;
-    margin: 0.2rem;
+    margin: 0.4rem;
     font-size: 1rem;
     font-weight: 700;
-    padding: 0.3rem;
+    padding: 0.5rem;
     cursor: pointer;
     letter-spacing: 0.2px;
     padding: 10px 0;
     border: none;
+    position: relative;
   }
 
   .btn-group > .btn:not(:first-child) {
@@ -85,22 +99,16 @@
     }
   }
 
-  @media (min-width: 768px) {
-    .btn {
-      width: 18rem;
-    }
-  }
-
   @media (min-width: 1024px) {
     .btn {
-      width: 15rem;
+      width: 10rem;
       display: flow-root;
     }
   }
 
   @media (min-width: 1440px) {
     .btn {
-      width: 17rem;
+      width: 15rem;
     }
   }
   

@@ -1,0 +1,15 @@
+AXIOS - consultas get
+    
+    import axios from "axios";
+    mounted() {
+      // Performing a GET request
+      axios.get('../../static/data/about-us.json')
+        .then( response => {
+          return console.log(response.data); // 
+          return console.log(response.status); //
+        })
+        .catch(error => {
+          return console.log(error);
+        });
+    },
+

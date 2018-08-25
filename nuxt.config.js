@@ -3,7 +3,6 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: "Proyecto prestamype",
     meta: [
       {
         charset: "utf-8"
@@ -13,10 +12,15 @@ module.exports = {
         content: "width=device-width, initial-scale=1"
       },
       {
-        hid: "description",
-        name: "description",
-        content: "proyecto basado en nuxt.js"
-      }
+        hid: "author",
+        name: "author",
+        content: "Prestamype"
+      },
+      {
+        hid: "robots",
+        name: "robots",
+        content: "all, index, follow"
+      },
     ],
     link: [
       {
@@ -38,6 +42,10 @@ module.exports = {
         rel:"stylesheet",
         href:"https://use.fontawesome.com/releases/v5.1.0/css/all.css"
       }
+    ],
+    css: [
+      '@/assets/css/header.css',
+      '@/assets/css/root.css',
     ],
     script: [
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'},
@@ -68,5 +76,8 @@ module.exports = {
         });
       }
     }
+  },
+  env: {
+    baseURL: (process.env.NODE_ENV === 'production' ? 'http//your-url' : 'http://localhost:3000')
   }
 };

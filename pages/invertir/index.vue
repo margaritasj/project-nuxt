@@ -1,7 +1,10 @@
 <template>
-  <div class="invert">
+  <div>
     <!-- Header -->
-    <HeaderApp v-for="(infoh,index) in infos" :infoh="infoh" :key="index" class="parallax"/>
+    <div class="parallax p-header">
+      <HeaderApp v-for="(infoh,index) in infos" :infoh="infoh" :key="index"/>
+    </div>
+    <!-- Sections -->
     <div class="box-invert bg-white ml-3 mr-3">
       <CardCounter/> 
     </div>
@@ -41,12 +44,11 @@
 </script>
 <style scoped>
 
-  @import url(assets/css/root);
-  @import url(assets/css/header);
+  @import url(assets/css/root.css);
+  @import url(assets/css/header.css);
 
   .parallax {
     background-image: url("https://res.cloudinary.com/prestamype/image/upload/v1533326661/banner-inv.png");  
-    height: 83vh;
   }
 
   .box-invert {
@@ -54,29 +56,6 @@
     margin-top: -140px;
   }
 
-  /* Small devices (landscape phones, 576px and up) */
-  @media (min-width: 576px) { 
-    .parallax {
-     height: 60vh!important;
-    }
-  }
-
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) { 
-    .box-invert {
-      margin-top: -30px;
-    }
-  }
-
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) {  
-    
-  }
-
-  /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) { 
-
-  }
 
 </style>
 

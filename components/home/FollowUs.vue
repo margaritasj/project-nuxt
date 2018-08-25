@@ -1,12 +1,14 @@
 <template>
-<!-- Seccion de siguenos -->
-  <section class="container-fluid img-green text-white pt-5">
-		<div class="row">
-			<h5 class="col-12 text-uppercase pt-5 pb-5">Síguenos en: 
-        <img src="@/assets/images/fb-circular-2.png" alt="fb-circular">
-      </h5>
-		</div>
-  </section>
+  <div class="img-green">
+    <!-- Seccion de siguenos -->
+    <section class="container text-white pt-5">
+      <div class="row">
+        <h5 class="col-12 text-uppercase pt-5 pb-5">Síguenos en: 
+          <img src="@/assets/images/fb-circular-2.png" alt="fb-circular">
+        </h5>
+      </div>
+    </section>
+  </div>
 </template>
 <style scoped>
 

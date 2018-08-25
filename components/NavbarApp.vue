@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <nav class="navbar navbar-expand-lg fixed-top" :class="{'scrolled':scrolled}">
-      <div class="container-fluid">
+      <div class="container">
         <div class="logo">
           <nuxt-link class="navbar-brand nav-logo js-scroll-trigger" to="/">
             <div class="logo-white logo-green" ></div>

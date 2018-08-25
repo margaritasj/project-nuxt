@@ -27,7 +27,7 @@ export default {
   },
   methods: {
 		/* ------------*/	
-    stripTheGarbage: (e)=> {
+    stripTheGarbage: e => {
       if ((e.keyCode < 48 && e.keyCode !== 46) || e.keyCode > 59) {
         e.preventDefault();
       }
@@ -63,10 +63,10 @@ export default {
   },
   filters: {
     currency: {
-      read: function (value) {
+      read: value => {
         return '$' + value.toFixed(2)
       },
-      write: function (value) {
+      write: value => {
         var number = +value.replace(/[^\d.]/g, '')
         return isNaN(number) ? 0 : number
       }

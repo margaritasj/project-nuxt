@@ -1,39 +1,41 @@
 <template>
-	<!-- Seccion testimonios de exito -->
-	<section class="container-fluid bg-green">
-		<div class="row">
-			<div class="col-12 text-center pt-5">
-				<h5 class="p-2 text-white h5">Casos de éxito</h5>
-				<linetitle class="bg-white"/>
-			</div>
-			<div class="col-12 pb-5">
-				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-					</ol>
-					<div class="carousel-inner text-white">
-						<div class="carousel-item active text-center">
-							<p class="p-1 shadow-effect"> "Gracias a Prestamype logré mudarme a un local más grande en dos oportunidades. Incluso contratar más personal para cubrir la demanda. Estoy muy agradecida." </p>	
-							<br>
-							<h6 class="font-weight-bold mb-5 name-user"> GRECIA AGUIRRE</h6>
-						</div>
-						<div class="carousel-item text-center">
-							<p class="p-1 shadow-effect"> "Gracias a Prestamype logré mudarme a un local más grande en dos oportunidades. Incluso contratar más personal para cubrir la demanda. Estoy muy agradecida." </p>	
-							<br>
-							<h6 class="font-weight-bold mb-5 name-user"> GRECIA AGUIRRE</h6>
-						</div>
-						<div class="carousel-item text-center">
-							<p class="p-1 shadow-effect"> "Gracias a Prestamype logré mudarme a un local más grande en dos oportunidades. Incluso contratar más personal para cubrir la demanda. Estoy muy agradecida." </p>	
-							<br>
-							<h6 class="font-weight-bold mb-5 name-user"> GRECIA AGUIRRE</h6>
+	<div>
+		<!-- Seccion testimonios de exito -->
+		<section class="container-fluid bg-green">
+			<div class="row">
+				<div class="col-12 text-center pt-5">
+					<h5 class="p-2 text-white h5">Casos de éxito</h5>
+					<linetitle class="bg-white"/>
+				</div>
+				<div class="col-12 pb-5">
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner text-white">
+							<div class="carousel-item active text-center">
+								<p class="p-1 shadow-effect"> "Gracias a Prestamype logré mudarme a un local más grande en dos oportunidades. Incluso contratar más personal para cubrir la demanda. Estoy muy agradecida." </p>	
+								<br>
+								<h6 class="font-weight-bold mb-5 name-user"> GRECIA AGUIRRE</h6>
+							</div>
+							<div class="carousel-item text-center">
+								<p class="p-1 shadow-effect"> "Gracias a Prestamype logré mudarme a un local más grande en dos oportunidades. Incluso contratar más personal para cubrir la demanda. Estoy muy agradecida." </p>	
+								<br>
+								<h6 class="font-weight-bold mb-5 name-user"> GRECIA AGUIRRE</h6>
+							</div>
+							<div class="carousel-item text-center">
+								<p class="p-1 shadow-effect"> "Gracias a Prestamype logré mudarme a un local más grande en dos oportunidades. Incluso contratar más personal para cubrir la demanda. Estoy muy agradecida." </p>	
+								<br>
+								<h6 class="font-weight-bold mb-5 name-user"> GRECIA AGUIRRE</h6>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</div>
 </template>
 <script>
 
